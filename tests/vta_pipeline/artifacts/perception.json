@@ -1,0 +1,992 @@
+[
+  {
+    "type": "text",
+    "content": "\u00aeO<",
+    "confidence": 0.25,
+    "bbox": [
+      15,
+      11,
+      72,
+      14
+    ]
+  },
+  {
+    "type": "text",
+    "content": "\u00a9",
+    "confidence": 0.55,
+    "bbox": [
+      150,
+      12,
+      10,
+      12
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Pixelsense|Tablero",
+    "confidence": 0.62,
+    "bbox": [
+      167,
+      12,
+      148,
+      14
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Ka...",
+    "confidence": 0.62,
+    "bbox": [
+      290,
+      5,
+      34,
+      28
+    ]
+  },
+  {
+    "type": "text",
+    "content": "++",
+    "confidence": 0.58,
+    "bbox": [
+      346,
+      11,
+      13,
+      14
+    ]
+  },
+  {
+    "type": "text",
+    "content": "\u00a9",
+    "confidence": 0.9,
+    "bbox": [
+      17,
+      50,
+      14,
+      16
+    ]
+  },
+  {
+    "type": "text",
+    "content": "PixelSense",
+    "confidence": 0.57,
+    "bbox": [
+      40,
+      52,
+      64,
+      11
+    ]
+  },
+  {
+    "type": "text",
+    "content": "@",
+    "confidence": 0.77,
+    "bbox": [
+      120,
+      56,
+      8,
+      8
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Privada",
+    "confidence": 0.73,
+    "bbox": [
+      138,
+      53,
+      42,
+      10
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Uttima",
+    "confidence": 0.27,
+    "bbox": [
+      2239,
+      53,
+      37,
+      10
+    ]
+  },
+  {
+    "type": "text",
+    "content": "edici\u00e9n",
+    "confidence": 0.71,
+    "bbox": [
+      2282,
+      38,
+      43,
+      35
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Hace1h",
+    "confidence": 0.7,
+    "bbox": [
+      2334,
+      53,
+      46,
+      10
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Compartir",
+    "confidence": 0.6,
+    "bbox": [
+      2402,
+      52,
+      65,
+      14
+    ]
+  },
+  {
+    "type": "text",
+    "content": "fr",
+    "confidence": 0.48,
+    "bbox": [
+      2485,
+      50,
+      16,
+      16
+    ]
+  },
+  {
+    "type": "text",
+    "content": "+++",
+    "confidence": 0.57,
+    "bbox": [
+      2521,
+      57,
+      16,
+      2
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Cambiar",
+    "confidence": 0.81,
+    "bbox": [
+      2358,
+      92,
+      43,
+      28
+    ]
+  },
+  {
+    "type": "text",
+    "content": "portada",
+    "confidence": 0.92,
+    "bbox": [
+      2407,
+      92,
+      39,
+      28
+    ]
+  },
+  {
+    "type": "text",
+    "content": "|",
+    "confidence": 0.88,
+    "bbox": [
+      2454,
+      92,
+      8,
+      28
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Reposicionar",
+    "confidence": 0.88,
+    "bbox": [
+      2469,
+      103,
+      67,
+      11
+    ]
+  },
+  {
+    "type": "text",
+    "content": "@",
+    "confidence": 0.77,
+    "bbox": [
+      96,
+      370,
+      10,
+      24
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Ocultar",
+    "confidence": 0.9,
+    "bbox": [
+      116,
+      374,
+      48,
+      13
+    ]
+  },
+  {
+    "type": "text",
+    "content": "descripci\u00e9n",
+    "confidence": 0.88,
+    "bbox": [
+      170,
+      376,
+      69,
+      13
+    ]
+  },
+  {
+    "type": "text",
+    "content": "\u00a9",
+    "confidence": 0.92,
+    "bbox": [
+      99,
+      407,
+      28,
+      28
+    ]
+  },
+  {
+    "type": "text",
+    "content": "PixelSense",
+    "confidence": 0.92,
+    "bbox": [
+      143,
+      410,
+      157,
+      24
+    ]
+  },
+  {
+    "type": "text",
+    "content": "\u00a7%TableroKanban",
+    "confidence": 0.0,
+    "bbox": [
+      99,
+      513,
+      120,
+      14
+    ]
+  },
+  {
+    "type": "text",
+    "content": "22",
+    "confidence": 0.06,
+    "bbox": [
+      239,
+      507,
+      20,
+      28
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Tablerodetallado",
+    "confidence": 0.52,
+    "bbox": [
+      266,
+      514,
+      109,
+      12
+    ]
+  },
+  {
+    "type": "text",
+    "content": "=",
+    "confidence": 0.13,
+    "bbox": [
+      401,
+      514,
+      12,
+      2
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Tabla",
+    "confidence": 0.13,
+    "bbox": [
+      419,
+      514,
+      35,
+      11
+    ]
+  },
+  {
+    "type": "text",
+    "content": "=",
+    "confidence": 0.37,
+    "bbox": [
+      486,
+      515,
+      6,
+      1
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Lista",
+    "confidence": 0.95,
+    "bbox": [
+      498,
+      515,
+      36,
+      10
+    ]
+  },
+  {
+    "type": "text",
+    "content": "weaQaz",
+    "confidence": 0.1,
+    "bbox": [
+      2268,
+      516,
+      96,
+      12
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Nuevo",
+    "confidence": 0.38,
+    "bbox": [
+      2374,
+      504,
+      60,
+      36
+    ]
+  },
+  {
+    "type": "text",
+    "content": "v",
+    "confidence": 0.29,
+    "bbox": [
+      2443,
+      504,
+      9,
+      36
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Pendiente",
+    "confidence": 0.92,
+    "bbox": [
+      125,
+      565,
+      62,
+      10
+    ]
+  },
+  {
+    "type": "text",
+    "content": "0",
+    "confidence": 0.93,
+    "bbox": [
+      194,
+      565,
+      6,
+      10
+    ]
+  },
+  {
+    "type": "text",
+    "content": "\u00a9",
+    "confidence": 0.84,
+    "bbox": [
+      390,
+      562,
+      16,
+      16
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Encurso",
+    "confidence": 0.92,
+    "bbox": [
+      413,
+      565,
+      53,
+      10
+    ]
+  },
+  {
+    "type": "text",
+    "content": "3",
+    "confidence": 0.96,
+    "bbox": [
+      472,
+      565,
+      7,
+      10
+    ]
+  },
+  {
+    "type": "text",
+    "content": "@",
+    "confidence": 0.71,
+    "bbox": [
+      679,
+      563,
+      14,
+      14
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Completado",
+    "confidence": 0.9,
+    "bbox": [
+      700,
+      565,
+      79,
+      13
+    ]
+  },
+  {
+    "type": "text",
+    "content": "0",
+    "confidence": 0.95,
+    "bbox": [
+      786,
+      565,
+      6,
+      10
+    ]
+  },
+  {
+    "type": "text",
+    "content": "\u00a5",
+    "confidence": 0.54,
+    "bbox": [
+      100,
+      604,
+      6,
+      7
+    ]
+  },
+  {
+    "type": "text",
+    "content": "(Desarrollo",
+    "confidence": 0.68,
+    "bbox": [
+      117,
+      602,
+      101,
+      11
+    ]
+  },
+  {
+    "type": "text",
+    "content": "3",
+    "confidence": 0.82,
+    "bbox": [
+      210,
+      594,
+      12,
+      28
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Nueva",
+    "confidence": 0.96,
+    "bbox": [
+      138,
+      649,
+      40,
+      11
+    ]
+  },
+  {
+    "type": "text",
+    "content": "pagina",
+    "confidence": 0.96,
+    "bbox": [
+      184,
+      648,
+      42,
+      15
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Configuraci\u00e9n",
+    "confidence": 0.82,
+    "bbox": [
+      399,
+      647,
+      97,
+      15
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Inicial",
+    "confidence": 0.91,
+    "bbox": [
+      500,
+      647,
+      39,
+      12
+    ]
+  },
+  {
+    "type": "text",
+    "content": "estructura,",
+    "confidence": 0.96,
+    "bbox": [
+      543,
+      649,
+      73,
+      12
+    ]
+  },
+  {
+    "type": "text",
+    "content": "+",
+    "confidence": 0.91,
+    "bbox": [
+      695,
+      653,
+      2,
+      2
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Nueva",
+    "confidence": 0.91,
+    "bbox": [
+      714,
+      649,
+      40,
+      11
+    ]
+  },
+  {
+    "type": "text",
+    "content": "pagina",
+    "confidence": 0.93,
+    "bbox": [
+      760,
+      649,
+      42,
+      14
+    ]
+  },
+  {
+    "type": "text",
+    "content": "modelo",
+    "confidence": 0.93,
+    "bbox": [
+      399,
+      670,
+      78,
+      14
+    ]
+  },
+  {
+    "type": "text",
+    "content": "y",
+    "confidence": 0.92,
+    "bbox": [
+      451,
+      660,
+      7,
+      31
+    ]
+  },
+  {
+    "type": "text",
+    "content": "el",
+    "confidence": 0.96,
+    "bbox": [
+      464,
+      660,
+      12,
+      31
+    ]
+  },
+  {
+    "type": "text",
+    "content": "flujo",
+    "confidence": 0.96,
+    "bbox": [
+      481,
+      669,
+      30,
+      15
+    ]
+  },
+  {
+    "type": "text",
+    "content": "de",
+    "confidence": 0.81,
+    "bbox": [
+      515,
+      670,
+      17,
+      11
+    ]
+  },
+  {
+    "type": "text",
+    "content": "la",
+    "confidence": 0.81,
+    "bbox": [
+      534,
+      660,
+      11,
+      31
+    ]
+  },
+  {
+    "type": "text",
+    "content": "aplicacion",
+    "confidence": 0.34,
+    "bbox": [
+      550,
+      669,
+      69,
+      15
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Pagina",
+    "confidence": 0.93,
+    "bbox": [
+      395,
+      707,
+      47,
+      31
+    ]
+  },
+  {
+    "type": "text",
+    "content": "y",
+    "confidence": 0.93,
+    "bbox": [
+      449,
+      720,
+      7,
+      11
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Documento",
+    "confidence": 0.92,
+    "bbox": [
+      459,
+      716,
+      159,
+      15
+    ]
+  },
+  {
+    "type": "text",
+    "content": "con",
+    "confidence": 0.96,
+    "bbox": [
+      542,
+      707,
+      24,
+      31
+    ]
+  },
+  {
+    "type": "text",
+    "content": "toda",
+    "confidence": 0.69,
+    "bbox": [
+      573,
+      707,
+      29,
+      31
+    ]
+  },
+  {
+    "type": "text",
+    "content": "la",
+    "confidence": 0.69,
+    "bbox": [
+      606,
+      707,
+      17,
+      31
+    ]
+  },
+  {
+    "type": "text",
+    "content": "estructura",
+    "confidence": 0.93,
+    "bbox": [
+      399,
+      739,
+      226,
+      14
+    ]
+  },
+  {
+    "type": "text",
+    "content": "y",
+    "confidence": 0.93,
+    "bbox": [
+      472,
+      729,
+      6,
+      31
+    ]
+  },
+  {
+    "type": "text",
+    "content": "el",
+    "confidence": 0.96,
+    "bbox": [
+      485,
+      729,
+      11,
+      31
+    ]
+  },
+  {
+    "type": "text",
+    "content": "roadmap",
+    "confidence": 0.95,
+    "bbox": [
+      503,
+      729,
+      53,
+      31
+    ]
+  },
+  {
+    "type": "text",
+    "content": "de",
+    "confidence": 0.65,
+    "bbox": [
+      562,
+      729,
+      17,
+      31
+    ]
+  },
+  {
+    "type": "text",
+    "content": "la",
+    "confidence": 0.65,
+    "bbox": [
+      583,
+      729,
+      14,
+      31
+    ]
+  },
+  {
+    "type": "text",
+    "content": "app",
+    "confidence": 0.89,
+    "bbox": [
+      601,
+      729,
+      27,
+      31
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Mvp",
+    "confidence": 0.37,
+    "bbox": [
+      399,
+      786,
+      32,
+      11
+    ]
+  },
+  {
+    "type": "text",
+    "content": "+",
+    "confidence": 0.93,
+    "bbox": [
+      403,
+      835,
+      10,
+      10
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Nueva",
+    "confidence": 0.93,
+    "bbox": [
+      426,
+      825,
+      38,
+      31
+    ]
+  },
+  {
+    "type": "text",
+    "content": "pagina",
+    "confidence": 0.88,
+    "bbox": [
+      471,
+      825,
+      43,
+      31
+    ]
+  },
+  {
+    "type": "text",
+    "content": "v",
+    "confidence": 0.38,
+    "bbox": [
+      100,
+      898,
+      8,
+      7
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Disefio",
+    "confidence": 0.65,
+    "bbox": [
+      125,
+      896,
+      44,
+      11
+    ]
+  },
+  {
+    "type": "text",
+    "content": "0",
+    "confidence": 0.89,
+    "bbox": [
+      190,
+      896,
+      6,
+      10
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Nueva",
+    "confidence": 0.96,
+    "bbox": [
+      138,
+      943,
+      40,
+      11
+    ]
+  },
+  {
+    "type": "text",
+    "content": "pagina",
+    "confidence": 0.96,
+    "bbox": [
+      184,
+      942,
+      42,
+      15
+    ]
+  },
+  {
+    "type": "text",
+    "content": "+",
+    "confidence": 0.92,
+    "bbox": [
+      403,
+      943,
+      10,
+      10
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Nueva",
+    "confidence": 0.92,
+    "bbox": [
+      426,
+      933,
+      38,
+      31
+    ]
+  },
+  {
+    "type": "text",
+    "content": "pagina",
+    "confidence": 0.95,
+    "bbox": [
+      471,
+      933,
+      43,
+      31
+    ]
+  },
+  {
+    "type": "text",
+    "content": "+",
+    "confidence": 0.91,
+    "bbox": [
+      695,
+      947,
+      2,
+      2
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Nueva",
+    "confidence": 0.91,
+    "bbox": [
+      714,
+      943,
+      40,
+      11
+    ]
+  },
+  {
+    "type": "text",
+    "content": "pagina",
+    "confidence": 0.93,
+    "bbox": [
+      760,
+      943,
+      42,
+      14
+    ]
+  },
+  {
+    "type": "text",
+    "content": "Nuevo",
+    "confidence": 0.96,
+    "bbox": [
+      120,
+      994,
+      39,
+      10
+    ]
+  },
+  {
+    "type": "text",
+    "content": "grupo",
+    "confidence": 0.96,
+    "bbox": [
+      164,
+      997,
+      35,
+      10
+    ]
+  }
+]

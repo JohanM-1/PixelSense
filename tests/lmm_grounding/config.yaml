@@ -1,0 +1,23 @@
+output_mode: "json_sequence" # Options: "single_point", "json_sequence"
+visualization:
+  draw_steps: true
+  save_individual_steps: true # Save image_step_1.png, image_step_2.png...
+prompt_template: |
+  User instruction: {prompt}
+  
+  Please decompose this task into a sequence of low-level UI actions.
+  If the task involves moving an item (drag and drop), you MUST provide the start coordinate (the item to move) and the end coordinate (the destination container).
+  
+  Format your answer strictly as a JSON list of objects.
+  
+  Example for "Move item A to column B":
+  [
+    {{"action": "drag", "start_bbox": [100, 200, 150, 250], "end_bbox": [400, 200, 500, 600], "description": "Drag 'Item A' to 'Column B'"}}
+  ]
+  
+  Example for "Click on Submit":
+  [
+    {{"action": "click", "bbox": [10, 20, 30, 40], "description": "Click 'Submit' button"}}
+  ]
+  
+  Now, provide the JSON for the user instruction.

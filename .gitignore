@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+.venv
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Project specific
+.trae/
+logs/
+*.log
+analysis_logs.json
+video_analysis_result.json
+runs/
+uploads/
+datasets/
+
+# Large files / Media
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.jpg
+*.jpeg
+*.png
+*.gif
+# Exclude specific large files seen in root
+League of Legends 2026.01.06 - 09.58.44.02.mp4
+debug_crop_hud.mp4
+temp_frame_debug_crop_hud.mp4_1.0.jpg
+
+# Models
+*.pt
+*.pth
+*.onnx
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
