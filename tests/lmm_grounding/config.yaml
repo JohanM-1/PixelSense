@@ -9,6 +9,7 @@ prompt_template: |
   If the task involves moving an item (drag and drop), you MUST provide the start coordinate (the item to move) and the end coordinate (the destination container).
   
   Format your answer strictly as a JSON list of objects.
+  Use normalized coordinates [0-1000] for all bounding boxes (0=top/left, 1000=bottom/right).
   
   Example for "Move item A to column B":
   [

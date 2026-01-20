@@ -137,9 +137,27 @@ def run_qwen_ui(model_path, image_path, prompt, output_path, quantize=False, con
         image = Image.open(image_path)
         origin_width, origin_height = image.size
         
-        # Calculate resize factor just in case we need it for absolute coordinate scaling
-        # Qwen2.5-VL uses absolute coords on RESIZED image
-        resized_height, resized_width = smart_resize(origin_height, origin_width, max_pixels=12845056)
+        # Calculate resize factor using actual model inputs
+        if "image_grid_thw" in inputs:
+            grid_thw = inputs["image_grid_thw"][0]
+            # grid_thw is [t, h, w] or similar. Qwen2-VL is usually [h, w] for static image?
+            # Let's assume it matches Qwen2-VL standard: [grid_h, grid_w] for single image input
+            # Actually, check if it includes time dimension. Usually it's a tensor.
+            # Safe approach: convert to list and inspect
+            try:
+                 # If tensor
+                 grid_shape = grid_thw.tolist() if hasattr(grid_thw, "tolist") else grid_thw
+                 # Usually [h, w] for 1 image
+                 grid_h, grid_w = grid_shape[1], grid_shape[2]
+                 resized_height = grid_h * 14
+                 resized_width = grid_w * 14
+                 print(f"Detected model input size: {resized_width}x{resized_height} (from grid {grid_w}x{grid_h})")
+            except:
+                 print("Could not parse image_grid_thw, falling back to smart_resize")
+                 resized_height, resized_width = smart_resize(origin_height, origin_width, max_pixels=12845056)
+        else:
+            resized_height, resized_width = smart_resize(origin_height, origin_width, max_pixels=12845056)
+            
         scale_x = origin_width / resized_width
         scale_y = origin_height / resized_height
         
@@ -167,7 +185,19 @@ def run_qwen_ui(model_path, image_path, prompt, output_path, quantize=False, con
                         # OR it might output absolute coords on original image (if it's smart enough)
                         # Let's check ranges.
                         
-                        is_normalized = all(c <= 1000 for c in bbox)
+                        # Check if prompt requires normalization
+                        force_normalized = "normalized" in config.get("prompt_template", "").lower()
+                        
+                        # Heuristic: if forced, trust it unless out of bounds. If not forced, guess based on range.
+                        if force_normalized:
+                             is_normalized = all(c <= 1000 for c in bbox)
+                             if not is_normalized:
+                                 print(f"Warning: Prompt requested normalized but coordinates {bbox} are out of range [0-1000]. Treating as Absolute.")
+                        else:
+                             is_normalized = all(c <= 1000 for c in bbox)
+                             
+                        print(f"BBox {bbox} interpretation: {'NORMALIZED' if is_normalized else 'ABSOLUTE'} (Forced: {force_normalized})")
+                        
                         if is_normalized:
                             # Treat as normalized
                             x1 = int(bbox[0] / 1000 * origin_width)
@@ -192,7 +222,13 @@ def run_qwen_ui(model_path, image_path, prompt, output_path, quantize=False, con
 
                         if "end_bbox" in step:
                             end_bbox = step["end_bbox"]
-                            if all(c <= 1000 for c in end_bbox):
+                            if force_normalized:
+                                is_end_normalized = all(c <= 1000 for c in end_bbox)
+                            else:
+                                is_end_normalized = all(c <= 1000 for c in end_bbox)
+                                
+                            print(f"End BBox {end_bbox} interpretation: {'NORMALIZED' if is_end_normalized else 'ABSOLUTE'}")
+                            if is_end_normalized:
                                 ex1 = int(end_bbox[0] / 1000 * origin_width)
                                 ey1 = int(end_bbox[1] / 1000 * origin_height)
                                 ex2 = int(end_bbox[2] / 1000 * origin_width)
