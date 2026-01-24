@@ -127,3 +127,50 @@ def download_video(url: str, output_path: str = "temp_video.mp4") -> str:
         ydl.download([url])
     
     return os.path.abspath(output_path)
+
+def extract_frames(video_path: str, output_dir: str, num_frames: int = 100) -> list:
+    """
+    Extracts N evenly spaced frames from the video and saves them to the output directory.
+    Returns a list of filenames.
+    """
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir, exist_ok=True)
+
+    cap = cv2.VideoCapture(video_path)
+    if not cap.isOpened():
+        raise ValueError("Could not open video.")
+
+    total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    
+    # Handle cases where frame count is not available
+    if total_frames <= 0:
+        logger.warning("Could not determine total frames.")
+        # Try to read one frame to check if video is valid at least
+        ret, _ = cap.read()
+        if not ret:
+             cap.release()
+             raise ValueError("Video seems empty or invalid.")
+        # If we can't get total frames easily, we might just read sequentially (inefficient for long videos but safe)
+        # For now, let's assume we can get it or fail.
+        cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
+
+    step = max(1, total_frames // num_frames)
+    
+    saved_files = []
+    
+    for i in range(num_frames):
+        frame_idx = i * step
+        if frame_idx >= total_frames:
+            break
+            
+        cap.set(cv2.CAP_PROP_POS_FRAMES, frame_idx)
+        ret, frame = cap.read()
+        
+        if ret:
+            filename = f"frame_{i:03d}.jpg"
+            filepath = os.path.join(output_dir, filename)
+            cv2.imwrite(filepath, frame)
+            saved_files.append(filename)
+            
+    cap.release()
+    return saved_files

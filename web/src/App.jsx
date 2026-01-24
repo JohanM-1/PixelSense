@@ -4,6 +4,7 @@ import ConfigPanel from './components/ConfigPanel';
 import AnalysisView from './components/AnalysisView';
 import SystemLogViewer from './components/SystemLogViewer';
 import GroundingLayout from './components/grounding/GroundingLayout';
+import LabelingWorkspace from './components/labeling/LabelingWorkspace';
 import { ThemeProvider } from './context/ThemeContext';
 
 function AppContent() {
@@ -26,6 +27,9 @@ function AppContent() {
       </div>
       <div className={activeTab === 'grounding' ? 'block' : 'hidden'}>
         <GroundingLayout />
+      </div>
+      <div className={activeTab === 'labeling' ? 'block' : 'hidden'}>
+        <LabelingWorkspace />
       </div>
       <div className={activeTab === 'settings' ? 'block' : 'hidden'}>
         <ConfigPanel />

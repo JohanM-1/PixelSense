@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LayoutDashboard, Settings, Video, Moon, Sun, Menu, X, FileText, Target } from 'lucide-react';
+import { LayoutDashboard, Settings, Video, Moon, Sun, Menu, X, FileText, Target, Tag } from 'lucide-react';
 import clsx from 'clsx';
 import { useTheme } from '../context/ThemeContext';
 
@@ -59,6 +59,12 @@ export default function Layout({ children, activeTab, onTabChange }) {
               label="Grounding Bench" 
               active={activeTab === 'grounding'} 
               onClick={() => { onTabChange('grounding'); closeSidebar(); }} 
+            />
+            <NavItem 
+              icon={<Tag size={20} />} 
+              label="AI Labeling" 
+              active={activeTab === 'labeling'} 
+              onClick={() => { onTabChange('labeling'); closeSidebar(); }} 
             />
             <NavItem 
               icon={<Settings size={20} />} 
